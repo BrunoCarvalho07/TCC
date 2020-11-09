@@ -1,0 +1,309 @@
+
+ * { 
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	  font-weight: 900;
+ }
+
+ body{
+   background: url(../img/fundo.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   
+   
+
+/* /////////////////////////// CABECALHO ///////////////////////////*/	   
+ }
+
+ header {
+  position: fixed;
+  background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
+  
+}
+
+a {
+   text-decoration: none;
+ }
+
+ ul{
+   list-style: none;
+ }
+
+ img{
+   max-width: 50%;
+ }
+ 
+/* /////////////////////////// FORMULARIO ///////////////////////////*/	
+#agenda .consultas-agendar {
+  margin: 0px;
+  width: 35%;
+  border-radius: 100px;
+  padding: 3% 2%;
+  margin-top: 560px;
+  margin-left: 590px;
+/* /////////////////////////// SOMBRA  ///////////////////////////*/
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#agenda .box1 {
+  color: red;
+  font-size: 20px;
+  padding: 2px 2px;
+  margin-left:3px;
+}
+
+
+#agenda .box2 {
+  color: rgb(16, 117, 233);
+  margin-left:25%;
+  margin-top:-37px;
+  font-size: 20px;
+  padding: 2px 2px;
+}
+
+#agenda .form-control{
+  display: none;
+	min-height: 60px;
+	width: 100%;
+  height: 35px;
+  padding: 6px 3px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: rgb(107, 99, 99);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+}
+
+
+
+/* /////////////////////////// BOTAO FORMULARIO ///////////////////////////*/
+.buttonLarge {
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4442db;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+  .buttonLarge:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px rgb(83, 83, 83);
+    transform: translateY(4px);
+  }
+  .buttonLarge:hover {background-color: #684cef}
+  
+  /*.buttonLarge:focus {
+    outline: none ;
+    box-shadow: none ;
+  }*/
+
+ /*///////////////////CABECALHO///////////////////*/
+ .cabecalho {
+  display: block;
+   width: 100%;
+   padding: 0px 1%;
+ }
+
+.cabecalho .Blogin {
+  margin-top: -46px;
+  padding: 0px 0px;
+  margin-left: 80%;
+  text-align: center;
+}
+
+.cabecalho .Blogin a{
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+}
+
+.cabecalho .Blogin a:hover{
+  
+  color:#674cf4;
+}
+
+.cabecalho span{
+  text-decoration: none;
+  font-size: 20px;
+  color:rgb(250, 250, 250);
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+
+ #mensagem .msg { /* MSG do HEADER*/
+  width: 100%;
+  position: fixed;
+  margin-top: 68px;
+  text-align: center;
+  font-size: 15px;
+ }
+
+/* MSG do HEADER*/
+
+#mensagem a {
+  color: rgb(92, 1, 134);
+  cursor: auto;
+}
+
+ #mensagem a:hover {
+  color: rgb(24, 1, 126);
+  text-decoration: dotted;
+  transition: all 0.10s ease-out;
+}
+
+ .logo{
+   width: 290px;
+   height: 38px;
+   background: url(../icones/logo.jpg) center center/260px no-repeat;
+   font-size: 0;
+ }
+ .btn-menu{
+   width: 56px;
+   height: 56px;
+   float: right;
+   margin-top: -62px;
+   text-align: center;
+   color: #fff;
+   border-radius: 56px;
+   cursor: pointer;
+   background:linear-gradient(to right, #684cef, rgb(26, 30, 238));
+  
+ }
+
+ .btn-menu:hover {
+  color: rgb(65, 70, 40);
+  transition: all 0.5s ease-out;
+
+}
+ /*///////////////////////////MENU DO header //////////////////////////*/
+ .menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(to right, #684cef, rgb(37, 41, 247));
+    top: 0%;
+    left: 0%;
+  }
+ 
+ 
+ .btn-close{
+   font-size: 3em; 
+   color: #fff;
+   float: right;
+   cursor: pointer;
+   margin-right: 5%;
+ }
+
+.menu ul{
+  
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.menu li{
+  padding: 1.5%;
+}
+.menu li a {
+  font-size: 2em;
+  color:#fff;
+  padding: 1.5% 3%;
+}
+.menu li a:hover{
+  border: 1px solid red;
+}
+
+
+/*///////////////////BANNER///////////////////////*/
+.campanha1 {
+  margin-top: 1.5em;
+  text-align: center;
+  padding: 60px 0%; /*Tamanho do banner*/
+
+}
+
+#camp1 {
+  padding: 10px 0px;
+  background-color: #f4f4f4c2;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  
+ .campanha1 p{
+  border: 2px solid;
+  border-radius: 4px;
+  margin: 40px 0 0 0;
+  padding: 14px 0%;
+  margin-top: 15px;
+  margin-right: 21%;
+  margin-left: 21%;
+  color:rgba(9, 54, 112, 0.822);
+  font-weight: 200;
+
+ }
+
+.campanha1 h2{
+  font-size:2.5em;
+  color:rgba(9, 54, 112, 0.822);
+  font-weight: 700;
+}
+/*////////////////////ICONES DO FOOTER////////////////////*/
+
+
+.fa-facebook {
+  padding: 25px 0px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  padding: 25px 0px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  padding: 25px 0px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  background: #125688;
+  color: white;
+}
+
+.fa:hover {
+  text-decoration: none;
+  opacity: 1.2;
+  color: rgb(116, 116, 116);
+}
+
+
+
+
+
+
+
+
+
+

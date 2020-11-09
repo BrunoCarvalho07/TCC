@@ -1,0 +1,10 @@
+Atualização do projeto 2.0
+
+09/11/2020
+
+melhor otimização 
+melhorias na spação do site 
+layout atualizado mais clear
+sistema de login mais fluido 
+adicionamos imagens dinamicas 
+foi adicionado sistema de recuperação de senha 

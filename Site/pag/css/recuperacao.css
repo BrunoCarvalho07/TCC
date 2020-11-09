@@ -1,0 +1,165 @@
+*{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 900;
+}
+
+.background{
+	width: center;
+	padding: 98px 98px;
+	background: url(../icones/reset.png) 52px / 220px no-repeat;
+	
+}
+
+.cabecalho .voltar {
+	text-decoration: none;
+	float: right;
+	font-size: 20px;
+	color:white;
+	cursor: pointer;
+	margin-top: -50px;
+	margin-right: 40px;
+
+  }
+  .cabecalho .voltar:hover{
+	color:#f44c62;
+  }
+
+#corpo_form h3{
+	text-align: center;
+	color: #07b410;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+
+.msg{
+	text-align: center;
+	font-weight: 900;
+}
+
+/*tabela*/
+#corpo_form{
+	width: 350px;
+	margin: 150px auto 0px auto;
+
+}
+
+#corpo_form strong{
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	font-weight: 1000;
+	margin-bottom: 20px;	
+	
+}
+#corpo_form strong:hover{
+	color: #4442db;
+	background-color: #ffffff;
+	transition: all 0.5s ease-out;
+	
+}
+
+/*tabela a*/
+#corpo_form .senha a{
+	margin-top: -5px;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #4442db;
+	text-decoration: none;
+	
+	
+}
+#corpo_form a{
+	margin: 25px;
+	display: block;
+	width: 350px;
+	border-radius: 20px;
+	background-color: #4442db;
+	margin-left: 2px;
+	font-weight: 900;	
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	text-decoration: none;	
+	
+}
+#corpo_form a:hover{
+	color: #4442db;
+	background-color: #ffffff;
+	transition: all 0.5s ease-out;
+	
+}
+
+/*tabela input*/
+#corpo_form input{
+	display: block;
+	width: 350px;
+	border-radius: 20px;
+	border: 2px solid #5f27fa;
+	padding: 15px 25px;
+	color: rgb(8, 2, 2);
+	margin-bottom: 13px;
+	outline: none;
+	font-size: 18px;	
+	
+}
+
+/*BOTAO*/
+.buttonLarge {
+	width: 350px;
+	padding: 10px;
+	letter-spacing: 2px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;	
+	color: rgb(255, 255, 255);
+	background-color: #4442db;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px rgb(153, 153, 153);
+  }
+  
+.buttonLarge:active {
+	background-color: #3e8e41;
+	box-shadow: 0 2px rgb(153, 22, 170);
+	transform: translateY(4px);
+}
+
+.buttonLarge:hover {
+	background-color: #684cef
+}
+	
+::-webkit-input-placeholder { /* Chrome/ Opera/ edge */
+	color: #07b410;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.logo{
+	width: 290px;
+	height: 38px;
+	background: url(../icones/logo.jpg) center center/260px no-repeat;
+	font-size: 0;
+  }
+  
+ 
+
+  /*///////////////////////////MENU DO header //////////////////////////*/
+  header {
+	margin-top: -150px;
+	position: fixed;
+	background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
+	
+  }
+
+.cabecalho {
+   width: 100%;
+   padding: 0px 1%;
+ }
+
+
+
+
+
+
+
+
