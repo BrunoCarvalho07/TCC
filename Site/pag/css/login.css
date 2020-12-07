@@ -2,14 +2,22 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 900;
 }
-
 .background{
 	width: center;
-	padding: 98px 98px;
-	background: url(../icones/login.png) 52px / 220px no-repeat;
-	
+	padding: 58px 98px;
+	background: url(../icones/login.png) 34px / 220px no-repeat;
 }
-
+.logo{
+	width: 290px;
+	height: 38px;
+	background: url(../icones/logo.jpg) center center/260px no-repeat;
+	font-size: 0;
+}
+header {
+	margin-top: -150px;
+	position: absolute;
+	background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
+  }
 .cabecalho .voltar {
 	text-decoration: none;
 	float: right;
@@ -18,86 +26,72 @@
 	cursor: pointer;
 	margin-top: -50px;
 	margin-right: 40px;
-
+}
+.cabecalho {
+	width: 100%;
+	padding: 0px 1%;
   }
-  .cabecalho .voltar:hover{
+.cabecalho .voltar:hover{
 	color:#b3b3b3;
   }
-
 #corpo_form h3{
-	text-align: center;
+	margin:14px;
+	margin-left: 69px;
 	color: #838383;
 	font-size: 25px;
 	font-weight: 900;
 }
-
-
 .msg{
 	text-align: center;
 	font-weight: 900;
 }
-
-/*tabela*/
-#corpo_form{
+#corpo_form{/*form*/
 	width: 350px;
 	margin: 150px auto 0px auto;
-
-}
-
-#corpo_form strong{
-	font-size: 15px;
-	color: rgb(255, 255, 255);
-	font-weight: 1000;
-	margin-bottom: 20px;	
-	
-}
-#corpo_form strong:hover{
-	color: #4442db;
-	background-color: #ffffff;
-	transition: all 0.5s ease-out;
-	
-}
-
-/*tabela a*/
-#corpo_form .senha a{
-	margin-top: -5px;
-	cursor: pointer;
-	color: #ffffff;
-	background-color: #858585;
-	text-decoration: none;
-	
-	
 }
 #corpo_form a{
-	margin: 15px;
-	display: block;
-	width: 350px;
-	border-radius: 20px;
-	margin-left: 2px;
+	background-color: rgb(247, 247, 247);
+	text-align: center;
 	font-weight: 900;	
 	color: rgb(58, 32, 175);
-	margin-bottom: -5px;
-	text-decoration: none;	
-	
+	text-decoration: none;
 }
-
-
-/*tabela input*/
-#corpo_form input{
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 22px 9px;
+    pointer-events: none;
+    color: rgba(55, 35, 240, 0.596);
+}
+.left-inner-addon input.form-control {
+	padding-left: 230px;
+}
+.right-inner-addon {
+	position: relative;
+	float:left;
+	background-color: rgb(255, 255, 255);
+}
+.right-inner-addon i {
+	right: 0px;
+	position: absolute;
+	padding: 22px 15px;
+	cursor: pointer;
+    color: rgba(59, 42, 218, 0.596);
+}
+#corpo_form input{/*tabela input*/
 	display: block;
 	width: 350px;
 	border-radius: 20px;
-	border: 2px solid #5f27fa;
+	border: 2px solid #6a3ee4;
 	padding: 15px 25px;
 	color: rgb(8, 2, 2);
-	margin-bottom: 13px;
+	margin-bottom: 10px;
 	outline: none;
 	font-size: 18px;	
-	
 }
-
-/*BOTAO*/
-.buttonLarge {
+.buttonLarge {/*button*/
 	width: 350px;
 	padding: 10px;
 	letter-spacing: 2px;
@@ -111,46 +105,14 @@
 	border-radius: 15px;
 	box-shadow: 0 9px rgb(153, 153, 153);
   }
-  
 .buttonLarge:active {
 	background-color: #838383;
 	box-shadow: 0 2px rgba(95, 95, 95, 0.637);
 	transform: translateY(4px);
 }
-
-
-	
 ::-webkit-input-placeholder { /* Chrome/ Opera/ edge */
 	color: #838383;
 }
-
-
-
-.logo{
-	width: 290px;
-	height: 38px;
-	background: url(../icones/logo.jpg) center center/260px no-repeat;
-	font-size: 0;
-  }
-  
- 
-
-  /*///////////////////////////MENU DO header //////////////////////////*/
-  header {
-	margin-top: -150px;
-	position: fixed;
-	background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
-	
-  }
-
-.cabecalho {
-   width: 100%;
-   padding: 0px 1%;
- }
-
-
-
-
 
 
 

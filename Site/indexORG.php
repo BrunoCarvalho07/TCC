@@ -1,7 +1,4 @@
 <?php
-require 'pag/processamento/validacao.php';
-if(isset($_SESSION['id']) && !empty($_SESSION ['id'])): // verifica se está logado
-
 $url = 'http://newsapi.org/v2/top-headlines?country=br&category=health&apiKey=be733b160f204540921c161530dba637'; // pega o url e transforma em data frame e converte
 $response = file_get_contents($url);
 $Newsdata = json_decode($response);
@@ -26,8 +23,9 @@ $Newsdata = json_decode($response);
 	
 <!--Painel, usuario, sair -->
 <div class="Blogin">
-    <a href="#" title="<?php echo $id; ?>" >Olá, <?php echo $id; ?> </a>
-	<a href="pag/processamento/logout.php" title="Sair" style="color:bisque">Sair</a>
+    <a href="#" title="Bem vindo" >Bem vindo a HELP-ME!</a><br>
+	<a href="pag/login.php" title="Faça seu login">Entre</a>
+	<a href="pag/cadastro.php" title="Cadastre-se em nosso site">Cadastre-se</a></div>
 </div>
 
 </header>		
@@ -201,5 +199,4 @@ $(".btn-close").click(function(){
 });
 </script>
 </body>
-<?php else: header("Location: index.php");  endif; ?> 
 </html>

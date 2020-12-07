@@ -2,26 +2,25 @@
 * { 
 border: none;
 outline: none;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 box-sizing: border-box;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-weight: 900;
 }
-
 body{
 background: url(../img/fundo.png);
+overflow-x: hidden; 
 background-repeat: no-repeat;
 background-size: 100%;
-
-
-
-/* /////////////////////////// CABECALHO ///////////////////////////*/	   
 }
 
+/* /////////////////////////// CABECALHO ///////////////////////////*/	   
 header {
 position: absolute;
 background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
 margin-top: 0px;
-
 }
 
 a {
@@ -54,122 +53,83 @@ text-align: center;
 transition: all 0.2s ease-out;
 }
 
-
-
-
-
 #agenda .box2 {
 color: rgb(29, 124, 233);
 margin-left:center;
 text-align: center;
 font-size: 50px;
 padding: 2% 2%;
-
-
 }
 
 
-
-
-
-/* /////////////////////////// BOTAO FORMULARIO ///////////////////////////*/
 .buttonLarge {
-padding: 15px 25px;
+padding: 15px;
 font-size: 15px;
 text-align: center;
 cursor: pointer;
 outline: none;
 color: #fff;
-background-color: #4442db;
+background-color: #49a9f2;
 border: none;
 border-radius: 15px;
 box-shadow: 0 9px #999;
 }
-
-
-
 .buttonLarge:active {
 box-shadow: 0 5px rgb(83, 83, 83);
 transform: translateY(4px);
 }
 .buttonLarge:hover {
-  background-color: #684cef
+background-color: #684cef
 }
 
 
-/*///////////////////NOTICIAS///////////////////*/
 .jumbotron{
-
-overflow: hidden;
+overflow-x: hidden;
 background-color: #fff;
-border: 1px solid rgba(201, 199, 199, 0.829);
+border: 2px solid rgba(201, 199, 199, 0.829);
 display: flex;
 justify-content: flex-start;
-
+text-align: center;
 }
-
-.NewsGrid img,
-.NewsGrid div{
-
+.NewsGrid img{
+text-align: center;
 padding: 10px;
 }
-
-
-
-
+.NewsGrid div{
+text-align: center;
+padding: 10px;
+}
 .rounded-circle{
-width: 150px;
+width: 250px;
 border-radius: 150px;
-height:  150px;
+height:  225px;                                                                                      
 }
 
-
-/*///////////////////CABECALHO///////////////////*/
 .cabecalho {
 width: 100%;
-padding: 0px 1%;
-
+padding: 0px 3%;
 }
-
 .cabecalho .Blogin {
 margin-top: -1.5%;
 padding: 0px 0px;
 margin-left: 70%;
 text-align: center;
 }
-
 .cabecalho .Blogin a{
 text-decoration: none;
 font-size: 20px;
 color:white;
 }
 
-
-.cabecalho .Blogin2 a{
-text-decoration: none;
-font-size: 20px;
-color:white;
-}
-
-
-
-
 .logo{
 width: 290px;
 height: 38px;
-background: url(../icones/logo.jpg) center center/260px no-repeat;
+background: url(../icones/logo.png) center center/260px no-repeat;
 font-size: 0;
 }
 
-
-
-
-
-/*///////////////////BANNER///////////////////////*/
 #slider{
-overflow: hidden;
-
-
+overflow-x: hidden;
 }
 
 #slidershow figure{
@@ -178,43 +138,38 @@ width: 6310px;
 margin:0;
 left: 0;
 animation: 25s slidershow infinite;
-
 }
 
-
 #slidershow figure img{
-width: 10% ;
+width: 10%;
 float: left;
-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-
-
-
-transition: all 0.6s ease-out;
+box-shadow: 0px 10px 30px rgba(75, 75, 75, 0.2);
+transition: all 0.1s ease-out;
 }
 
 @keyframes slidershow {
 20%{
 left:  0%; 
 }
-50%{
-left: -100%;
+40%{
+left: -40%;
 }
-70%{
-left: -100% 25s;
+60%{
+left: -60% ;
 }
-
-
+80%{
+left: -100% ;
 }
-
-
-
+100%{
+left: 100% 25s;
+}
+}
 
 /*///////////////////BANNER1///////////////////////*/
 .campanha1 {
 margin-top: 1.5em;
 text-align: center;
 padding: 60px 0%; /*Tamanho do banner*/
-
 }
 
 #camp1 {
@@ -233,7 +188,6 @@ margin-right: 21%;
 margin-left: 21%;
 color:rgba(9, 54, 112, 0.822);
 font-weight: 200;
-
 }
 
 .campanha1 h2{
@@ -243,46 +197,108 @@ font-weight: 700;
 }
 /*////////////////////ICONES DO FOOTER////////////////////*/
 
-
-.fa-facebook {
-padding: 25px 0px;
+footer{
+background:linear-gradient(to right,#6D4FFA, rgb(45, 48, 192));
+bottom: 0px;
 width: 100%;
-text-align: center;
-text-decoration: none;
-border-radius: 50px;
-background: #3B5998;
-color: white;
-}
 
-.fa-twitter {
-padding: 25px 0px;
+}
+.rodape{
+display: flex;
+}
+.rodape .box{
+flex-basis: 50%;
+padding: 10px 20px;
+}
+.box h2{
+font-size: 1.125rem;
+font-weight: 600;
+text-transform: uppercase;
+color: rgb(255, 255, 255);
+
+}
+.box .linha{
+margin: 20px 0 0 0;
+position: relative;
+}
+.box .linha:before{
+position: absolute;
+content: '';
+top: -10px;
+height: 2px;
 width: 100%;
-text-align: center;
-text-decoration: none;
-border-radius: 50px;
-background: #55ACEE;
-color: white;
+background: #868686;
 }
-.fa-instagram {
-padding: 25px 0px;
+.box .linha:after{
+position: absolute;
+content: '';
+height: 2px;
+width: 15%;
+background: #ffffff;
+top: -10px;
+}
+.left .linha p{
+text-align: justify;
+}
+.left .linha .social{
+margin: 20px 0 0 0;
+}
+.left .linha .social a{
+padding: 0 2px;
+}
+.left .linha .social a span{
+height: 40px;
+width: 40px;
+background: #ffffff;
+color:black;
+line-height: 40px;
+text-align: center;
+font-size: 18px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.center .linha .fa{
+font-size: 1.4375rem;
+background: #ffffff;
+height: 45px;
+width: 45px;
+line-height: 45px;
+text-align: center;
+border-radius: 50%;
+transition: 0.3s;
+cursor: pointer;
+}
+.center .linha .fa:hover{
+background: #5644e5;
+}
+.center .linha .text{
+font-size: 1.0625rem;
+font-weight: 500;
+padding-left: 10px;
+color:white;
+}
+.center .linha .numero{
+margin: 15px 0;
+}
+
+
+.right form input, 
+.right form .msgForm{
 width: 100%;
-text-align: center;
-text-decoration: none;
-border-radius: 50px;
-background: #125688;
-color: white;
+font-size: 1.0625rem;
+background: #ffffff;
+padding-left: 10px;
+border: 1px solid  rgb(45, 48, 192);
 }
 
-.fa:hover {
-text-decoration: none;
-opacity: 1.2;
-color: rgb(116, 116, 116);
+.right form input{
+height: 35px;
 }
 
-
-
-
-
+.right .text{
+color:white;
+}
 
 
 

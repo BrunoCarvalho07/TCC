@@ -119,8 +119,7 @@
   }
   
 .buttonLarge:active {
-	background-color: #3e8e41;
-	box-shadow: 0 2px rgb(153, 22, 170);
+	box-shadow: 0 2px rgb(0, 0, 0);
 	transform: translateY(4px);
 }
 
@@ -128,9 +127,6 @@
 	background-color: #684cef
 }
 	
-::-webkit-input-placeholder { /* Chrome/ Opera/ edge */
-	color: #07b410;
-}
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

@@ -1,21 +1,13 @@
 <?php
-	
+
 	require 'conexao/conexao.php';
-
 		if(isset($_SESSION['id']) && !empty($_SESSION['id'])){
-
-			require 'class/class_login_cadastro.php';
-			$u = new Usuario();
-
+			include_once 'class/class_processamento_geral.php';
+			$u = new Process();
 			$UserON = $u->loggado($_SESSION['id']);
 			$id = $UserON['nome'];
-			
-
-
 	}else{
-
 		header("Location: site/index.php");
-	
 	}
 
 
