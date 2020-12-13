@@ -38,23 +38,23 @@ color:rgb(92, 92, 92);
 text-decoration: none;
 float: right;
 font-size: 20px;
-color:rgb(253, 195, 88);
+color:rgb(255, 255, 255);
 cursor: pointer;
 margin-top: -20px;
 }
 .cabecalho .agendamentos:hover {
-color:rgb(255, 174, 22);
+color:#5249f2;
 }
 .cabecalho .sair {
 text-decoration: none;
-color:rgb(247, 152, 152);
+color:rgb(255, 255, 255);
 float: right;
 font-size: 20px;
 cursor: pointer;
 margin-top: -20px;
 }
 .cabecalho .sair:hover{
-color:#fc0909bf;
+color:#5249f2;
 }
 .logo{
 width: 290px;
